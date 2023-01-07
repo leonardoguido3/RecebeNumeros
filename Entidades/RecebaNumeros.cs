@@ -18,7 +18,7 @@ namespace ReceberNumeros.Entidades
                 Console.WriteLine("================================\n");
                 Console.WriteLine("========= LISTA NUMERO =========\n");
                 Console.WriteLine("================================\n");
-                Console.Write("\nDigite um número " + i + ": ");
+                Console.Write($"\nDigite o  {i + 1}° numero: ");
                 var numero= Convert.ToInt32(Console.ReadLine());
 
                 Numeros.Add(numero);
@@ -34,7 +34,7 @@ namespace ReceberNumeros.Entidades
                 if (Numeros[i] >= 0 )
                 {
                     var positivo = Numeros[i];
-                    Console.WriteLine(positivo);
+                    Console.WriteLine($"O {i + 1}° é: {positivo}");
                 }
             }
         }
